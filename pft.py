@@ -29,7 +29,6 @@ def calculate_stats(group):
         std_dev = round(group[col].std(), 2)  # Standard Deviation
         stats[col_name] = f"n={sample_size},  Mean ± SD: {mean} ± {std_dev}"
     return stats
-# Median ± IQR: {median} ± {iqr/2},
 
 # Calculate stats for each group
 stats_Total = calculate_stats(group_Total)
