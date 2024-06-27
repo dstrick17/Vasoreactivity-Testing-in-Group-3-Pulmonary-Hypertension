@@ -4,9 +4,6 @@ from scipy.stats import ttest_rel
 file_path = "C:\\Users\\danst\\codedan\\group3\\group3_data.xlsx"
 df = pd.read_excel(file_path)
 
-# Ensure the data does not contain NaN values in the columns of interest
-df = df.dropna(subset=['mPAP', 'Post NO mPAP', 'PCWP', 'Post NO PCWP', 'CO', 'Post NO CO', 'CI', 'Post NO CI', 'PVR', 'Post NO PVR'])
-
 # Performing paired t-tests
 results = {}
 
