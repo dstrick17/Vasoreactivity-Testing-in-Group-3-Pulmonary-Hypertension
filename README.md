@@ -1,10 +1,10 @@
-# Vasoreactivity in Group 3 Pulmonary Hypertension
+# Vasoreactivity Testing in Group 3 Pulmonary Hypertension
 
 ## Overview
-This repository contains a series of Python scripts designed to analyze the impact of vasoreactivity testing on the prognosis of patients with Group 3 pulmonary hypertension. Vasoreactivity testing is a crucial diagnostic tool that may help predict patient outcomes and guide treatment decisions.
+This repository contains a series of Python scripts designed to analyze the impact of vasoreactivity testing on the prognosis of patients with Group 3 pulmonary hypertension. Vasoreactivity testing is a crucial diagnostic tool that may help predict patient outcomes and guide treatment decisions. 
 
 ## Project Structure
-The project consists of 9 Python scripts, each serving a unique purpose in the data analysis pipeline. Three of these scripts generate visualizations to aid in interpreting the data. The data was collected from a de-identified excel sheet built during a study approved by the Tufts Medical Center Institutional Review Board (IRB# 00004908) Titled “A Prospective study of Vasoreactivity and Mortality in WHO Group 3 Pulmonary Hypertension”. As a non-interventional study, it was not entered into clinicaltrials.gov.
+The project consists of 9 Python scripts, each serving a unique purpose in the data analysis pipeline. Three of these scripts generate visualizations to aid in interpreting the data. The data was collected from a de-identified excel sheet built during a study approved by the Tufts Medical Center Institutional Review Board (IRB# 00004908) Titled “A Prospective study of Vasoreactivity and Mortality in WHO Group 3 Pulmonary Hypertension”. As a non-interventional study, it was not entered into clinicaltrials.gov. The variables collected included demographics, clinical characteristics, brain natriuretic peptide (BNP), 6-minute walk distance (6MWD), pulmonary function tests (PFTs), pulmonary hemodynamics, echocardiographic parameters of right atrium size, right ventricular size and function, left atrial size, left ventricle ejection fraction, and survival. Measurements were recorded within 90 days of the right heart catheterization. The survival period was defined as the time between the baseline RHC and either death or the study end date of January 17, 2024. Statistical analysis was used to see the affects of these variables on mortality within this cohort
 
 ### Python Scripts
 
