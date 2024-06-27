@@ -10,9 +10,6 @@ df = pd.read_excel(file_path)
 # Drop rows with NaN values in the duration column
 df = df.dropna(subset=["Time from start date to end date (days)"])
 
-# Drop rows with NaN values in the duration column
-df = df.dropna(subset=["BNP level (pg/ml)"])
-
 # Check for leading or trailing whitespace and remove it
 df.columns = df.columns.str.strip()
 
