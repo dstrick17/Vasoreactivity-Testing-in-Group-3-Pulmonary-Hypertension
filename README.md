@@ -8,7 +8,7 @@ This repository contains a series of Python scripts designed to analyze the impa
 ## Project Structure
 The project consists of 16 Python scripts, each serving a unique purpose in the data analysis pipeline. Three of these scripts generate visualizations to aid in interpreting the data. The data was collected from a de-identified excel sheet built during a study approved by the Tufts Medical Center Institutional Review Board (IRB# 00004908) Titled “A Prospective study of Vasoreactivity and Mortality in WHO Group 3 Pulmonary Hypertension”. As a non-interventional study, it was not entered into clinicaltrials.gov.
 
-### Code
+### all_code.ipynb
 
 #### Tables
 
