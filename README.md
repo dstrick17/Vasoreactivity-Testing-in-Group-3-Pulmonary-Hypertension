@@ -1,4 +1,4 @@
-# The Python code for all work in this paper can be found in "all_code.ipynb"
+# The Python code for all work in this paper can be found as inidividual python scirpts in the "python_scripts" folder as well as in the "all_code.ipynb" jupyter notebook
 # The figures in the manuscript and supplement can be found in this repository
 
 
