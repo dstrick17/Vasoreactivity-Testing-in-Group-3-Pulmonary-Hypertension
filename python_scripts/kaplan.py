@@ -5,7 +5,7 @@ from lifelines.statistics import logrank_test
 # Set the font to Times New Roman
 plt.rcParams['font.family'] = 'Times New Roman'
 
-df = pd.read_excel("C:\\Users\\danst\\codedan\\group3\\group3_data.xlsx")
+df = pd.read_excel("YOUR-PATH-TO-XML-FILE")
 
 # Drop rows with NaN values in the duration column
 df = df.dropna(subset=["Time from start date to end date (days)"])
