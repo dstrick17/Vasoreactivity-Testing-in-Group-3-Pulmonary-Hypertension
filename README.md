@@ -1,5 +1,11 @@
-# The Python code for all work in this paper can be found as individual python scirpts in the "python_scripts" folder as well as in the "all_code.ipynb" jupyter notebook
-# The figures in the manuscript and supplement can be found in this repository
+# Vasoreactivity and Mortality in Group 3 Pulmonary Hypertension
+
+This repository contains all Python code and visualizations used in the analysis for our manuscript examining the prognostic impact of vasoreactivity testing in patients with Group 3 pulmonary hypertension.
+
+All code is provided as individual scripts in the `python_scripts` folder and consolidated in the `all_code.ipynb` Jupyter notebook. Figures from both the manuscript and supplementary materials are included.
+
+ **Published in:** *Pulmonary Circulation*  
+[Access the paper here](https://onlinelibrary.wiley.com/doi/10.1002/pul2.70078)
 
 
 ## Overview
@@ -14,25 +20,25 @@ The project consists of 16 Python scripts, each serving a unique purpose in the 
 
 
 1. **hemodynamics.py**
-   - **Description**: Calculates the sample size, mean, and standard deviations for all hemodynamic parameters measured in the study. This ouptuts the data in table 2 in the manuscript.
+   - **Description**: Calculates the sample size, mean, and standard deviations for all hemodynamic parameters measured in the study. This outputs the data in Table 2 in the manuscript.
 
 2. **pft.py**
-   - **Description**: Generates a table showing the sample size, mean, and standard deviation of certain pulmonary function test parameters divided into four groups based upon different lung diseases. This ouptuts the data in table 3 in the manuscript.
+   - **Description**: Generates a table showing the sample size, mean, and standard deviation of certain pulmonary function test parameters divided into four groups based on different lung diseases. This outputs the data in Table 3 in the manuscript.
 
 #### Regression Analysis
 
 3. **cox-univariate.py**
-   - **Description**: This is a univariate Cox proportional hazards models were applied to each potential predictor to assess its individual association with mortality.This ouptuts the data in first part of table 4 in the manuscript.
+   - **Description**: Univariate Cox proportional hazards models were applied to each potential predictor to assess its individual association with mortality.This outputs the data in first part of Table 4 in the manuscript.
 
    
 4. **cox-stepwise.py**
-   - **Description**: Variables demonstrating a p-value of less than 0.10 in these univariate analyses as well as variables considered relevant by clinical expertise including age, sex, and mPAP, were selected for further evaluation. Subsequently, we constructed a multivariate Cox proportional hazards model incorporating these selected variables. A backward stepwise elimination process was implemented to systematically remove variables if their association with the outcome, adjusted for the presence of other variables in the model, resulted in a p-value greater than 0.10. This ouptuts the data in second part of table 4 in the manuscript.
+   - **Description**: Variables demonstrating a p-value of less than 0.10 in these univariate analyses as well as variables considered relevant by clinical expertise including age, sex, and mPAP, were selected for further evaluation. Subsequently, we constructed a multivariate Cox proportional hazards model incorporating these selected variables. A backward stepwise elimination process was implemented to systematically remove variables if their association with the outcome, adjusted for the presence of other variables in the model, resulted in a p-value greater than 0.10. This outputs the data in second part of Table 4 in the manuscript.
 
 #### Kaplan-Meier Curves
 
 5. **kaplan.py**
    - **Description**: We employed Kaplan-Meier survival analysis to investigate the impact of change in PVR and change in mPAP during iNO challenge as well as baseline PVR and baseline mPAP on survival outcomes within our dataset. Two distinct groups were then created based on the median of change in PVR and mPAP or the median baseline PVR and baseline mPAP. A log rank test was used to statistically compare the survival distributions between the two groups.
-   - **Generates Image- Manuscript Figure 1**: Kaplan-Meier estimates survival of two groups of patients in this cohort illustrating the estimated survival probabilities over time (in months). Graph A divides the subjects into two groups based on median baseline PVR of 6.3 wood units. Graph B divides the subjects into two groups based on median baseline mPAP of 35 mm HG. Graph C divides the subjects into two groups based on median reduction in PVR during iNO challenge of 1.2 Wood units. Graph D divides the subjects into two groups based on median reduction in mPAP during iNO challenge of 5 mm HG. Only graph C showed a statistical significance in the survival between the two groups demonstrating that subjects with a greater reduction in PVR during iNO challenge were at an increased risk of mortality than subjects with a lower reduction in PVR. Of note, the average baseline PVR of subjects in the reduction of PVR by more than the median was 9.0 wood units, while the average baseline PVR of subjects in the reduction of PVR by the median or less was only 5.4 wood units. 
+- **Generates Image- Manuscript Figure 1**: Kaplan-Meier estimates survival of two groups of patients in this cohort illustrating the estimated survival probabilities over time (in months). Graph A divides the subjects into two groups based on median baseline PVR of 6.3 Wood Units. Graph B divides the subjects into two groups based on median baseline mPAP of 35 mm HG. Graph C divides the subjects into two groups based on median reduction in PVR during iNO challenge of 1.2 Wood Units. Graph D divides the subjects into two groups based on median reduction in mPAP during iNO challenge of 5 mm HG. Only Graph C demonstrated a statistically significant difference in survival between the two groups demonstrating that subjects with a greater reduction in PVR during iNO challenge were at an increased risk of mortality than subjects with a lower reduction in PVR. Of note, the average baseline PVR of subjects in the reduction of PVR by more than the median was 9.0 Wood Units, while the average baseline PVR of subjects in the reduction of PVR by the median or less was only 5.4 Wood Units. 
 
 6. **kaplan_5_wood_units.py**
    - **Description**: We conducted additional analyses using a threshold of 5 Wood Units to differentiate between mild/moderate and severe PH. Below, we analyzed the survival outcomes between patients with baseline PVR above and below this threshold and included Kaplan-Meier curves for these subgroups in our supplementary materials.
@@ -46,7 +52,7 @@ The project consists of 16 Python scripts, each serving a unique purpose in the 
 
 8. **linear.py**
    - **Description**: Compares the relationship between baseline pulmonary vascular resistance and the reduction in pulmonary vascular resistance for patients in this study.
-   - **Generates Image- Manuscript Figure 2**: Creates a linear regression of baseline PVR in wood units (PVR) compared to reduction in PVR in wood units during inhaled nitric oxide challenge (∆ PVR) with a coefficient of 0.43 and an R-squared value of 0.66.   
+   - **Generates Image- Manuscript Figure 2**: Creates a linear regression of baseline PVR in Wood Units (PVR) compared to reduction in PVR in Wood Units during inhaled nitric oxide challenge (∆ PVR) with a coefficient of 0.43 and an R-squared value of 0.66.   
 
 #### Scatter Plots
 
